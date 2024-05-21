@@ -156,7 +156,7 @@ class Entity extends AbstractField
      */
     public function getFullName()
     {
-        return ($this->getParent() ? $this->getParent()->getAlias() . '.' : '') . $this->getName();
+        return ($this->getParent() ? $this->getParent()->getAlias() . 'Field' : '') . $this->getName();
     }
 
     public function getField($index)
